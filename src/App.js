@@ -1,17 +1,21 @@
-import "./App.css";
 import React from "react";
-import { Routes, Route } from "react-router-dom";
-import Forms from "./form";
+import "./App.css";
 
-function App() {
+const UnderConstruction = () => {
   return (
-    <div className="App">
-      <Routes>
-        <Route path="/:id" element={<Forms />} />
-        <Route path="/" element={<Forms />} />
-      </Routes>
+    <div className="construction-container">
+      <div className="construction-content">
+        <h1>🚧 Page Under Construction 🚧</h1>
+        <p>We’re working hard to bring you a great experience. Stay tuned!</p>
+        <img
+          src="https://via.placeholder.com/300"
+          alt="Under Construction"
+          className="construction-image"
+        />
+        <button className="construction-button">Notify Me</button>
+      </div>
     </div>
   );
-}
+};
 
-export default App;
+export default UnderConstruction;
